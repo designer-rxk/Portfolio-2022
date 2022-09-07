@@ -76,15 +76,13 @@
     height:100%;
     width:100%;
 }
-.one, .two, .three {
+.one, .two, .three , .four, .five{
     display: flex;
 }
 .carousel-left{
     width:30%;
     height:100%;
-    background: #ff4d5a;
-    border-bottom-left-radius: var(--border-radius);
-    border-top-left-radius: var(--border-radius);
+    z-index: 101;
 }
 .carousel-right{
     width:70%;
@@ -108,28 +106,58 @@
     bottom: 0;
     right:-3.5%;
 }
-
 .carousel-image-one{
     height:100%;
     background: url("https://images.unsplash.com/photo-1504728078670-d0a59873c8c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
     object-fit: cover;
     z-index: 100;
-    border-bottom-right-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    border-radius: var(--border-radius);
 }
-.carousel-image-two{
+.carousel-image{
     height:100%;
-    background: url("https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80");
-    object-fit: cover;
+    width:100%;
+    object-fit: fill;
     z-index: 100;
-    border-bottom-right-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    border-radius: var(--border-radius);
 }
-.carousel-image-three{
-    height:100%;
-    background: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
-    object-fit: cover;
-    z-index: 100;
-    border-bottom-right-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+.work-title{
+    font-size: 6.9rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.6rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+    color:white;
+    white-space: nowrap;
+}
+.work-links{
+    color: #ff4d5a;
+}
+.work-view-button{
+    width:10rem;
+    height:3rem;
+    margin:1rem;
+    border-radius:25px;
+    cursor: pointer;
+    background: white;
+    color:black;
+    font-weight: 400;
+    font-size: 1rem;
+    border:none;
+    font-family: "Poppins", sans-serif;
+    transition-duration: 0.4s;
+}
+.work-view-button:hover{
+    background: #ff4d5a;
+}
+.work-button-container{
+    text-align: center;
+}
+.no-anchor{
+    text-decoration: none;
+    color:black;
+}
+.desc-small{
+    font-size:1.2rem;
 }

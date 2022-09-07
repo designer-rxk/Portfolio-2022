@@ -22,7 +22,7 @@ const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4, ref5}) =>{
 
         <div className={"header"}>
             <div className={"name-wrapper"}>
-                <div className={"name"} onClick={()=>window.location.reload(false)}>
+                <div className={"name"} onClick={()=>window.location.reload()}>
                     <div className={"big"}>Raivis Kārkliņš</div>
                     <div className={"small"}>Kārkliņš</div>
                 </div>

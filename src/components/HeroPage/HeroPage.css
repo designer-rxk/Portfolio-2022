@@ -7,7 +7,7 @@
     height:0.001rem;
  }
 .hero-main{
-    margin:calc(3rem + 50px);
+    margin-left:calc(3rem + 50px);
     height:100vh;
     width:100%;
     display: flex;
@@ -69,7 +69,7 @@
 }
 .moonlight{
     position: absolute;
-    top: 0;
+    top: -20%;
     bottom: 0;
     left: 30%;
     margin: auto;
@@ -188,7 +188,7 @@
     top: 0px;
 }
 .moon-front2{
-    transform: translate3d(-38.1px, 18.9px, 0px);
+    transform: translate3d(-38.1px, 19px, 0px);
     transform-style: preserve-3d;
     backface-visibility: hidden;
     position: absolute;

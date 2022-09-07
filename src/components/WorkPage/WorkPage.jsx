@@ -1,13 +1,15 @@
 import React from "react";
 import './WorkPage.css';
 import {BiLeftArrowAlt, BiRightArrowAlt} from "react-icons/bi";
+import {AdminDashboard, Ecommerce, FitnessApp} from "../index";
+import {AdminDashboardImg, FitnessAppImg} from "../../assets";
 
 const WorkPage = () =>{
     const buttons = document.querySelectorAll("[data-carousel-button]");
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            const offset = button.dataset.carouselButton === "next" ? 1 : -1
+            const offset = button.dataset.carouselButton === "next" ? 1 : -1;
             const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
 
             const activeSlide = slides.querySelector("[data-active]");
@@ -26,41 +28,43 @@ const WorkPage = () =>{
             <div className={"work-page-container"}>
                 <div className={"work-left"}/>
                 <div className={"work-right"}>
-                    <div className="work-carousel" data-carousel>
-                        <button className="work-carousel-button prev" data-carousel-button="next">
+                    <div className={"work-carousel"} data-carousel>
+                        <button className={"work-carousel-button prev"} data-carousel-button={"prev"}>
                             <BiLeftArrowAlt/>
                         </button>
-                        <button className="work-carousel-button next" data-carousel-button="prev">
+                        <button className={"work-carousel-button next"} data-carousel-button={"next"}>
                             <BiRightArrowAlt/>
                         </button>
                         <ul data-slides>
                             <li className="work-slide" data-active>
                                 <div className={"work-section one"}>
                                     <div className={"carousel-left"}>
-                                        Left 1
+                                        <Ecommerce/>
                                     </div>
                                     <div className={"carousel-right"}>
                                         <div className={"carousel-image-one"}/>
                                     </div>
                                 </div>
                             </li>
+
                             <li className="work-slide">
                                 <div className={"work-section two"}>
                                     <div className={"carousel-left"}>
-                                        Left 2
+                                        <FitnessApp/>
                                     </div>
                                     <div className={"carousel-right"}>
-                                        <div className={"carousel-image-two"}/>
+                                        <img className={"carousel-image"} src={FitnessAppImg} alt={"Fitness App Img"}/>
                                     </div>
                                 </div>
                             </li>
+
                             <li className="work-slide">
                                 <div className={"work-section three"}>
                                     <div className={"carousel-left"}>
-                                        Left 3
+                                        <AdminDashboard/>
                                     </div>
                                     <div className={"carousel-right"}>
-                                        <div className={"carousel-image-three"}/>
+                                        <img className={"carousel-image"} src={AdminDashboardImg} alt={"Admin Dashboard Img"}/>
                                     </div>
                                 </div>
                             </li>
@@ -69,7 +73,6 @@ const WorkPage = () =>{
                             <p>02</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

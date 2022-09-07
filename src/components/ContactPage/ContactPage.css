@@ -134,8 +134,7 @@
     font-family: Poppins, sans-serif;
     font-weight: 400;
     cursor: pointer;
-    transition-duration: 0.3s;
-
+    transition-duration: 0.4s;
 }
 .contact-button:hover{
     background: #ff4d5a;

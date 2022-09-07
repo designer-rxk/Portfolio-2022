@@ -40,7 +40,7 @@ const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, ref5, setOpenModal, ope
                 <div className={"modal-item"}>
                     <div className={`modal-text`} onClick={()=>redirectUser(ref4)}>
                         <div className={"underline"}>
-                            Skills
+                            More Work
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import './App.css';
 import {useEffect, useMemo, useRef, useState} from "react";
-import {HeroPage, AboutPage, SkillsPage, WorkPage, ContactPage, Navbar} from "./components";
+import {HeroPage, AboutPage, MoreWork, WorkPage, ContactPage, Navbar} from "./components";
 
 const directUser = (element) => {
     element.scrollIntoView({behavior: 'smooth'});
@@ -66,22 +66,22 @@ const App = () => {
                       <HeroPage/>
                   </h2>
               </section>
-              <section className={"about page"}>
+              <section className={"page"}>
                   <h2 ref={ref2} id={'about'}>
                       <AboutPage />
                   </h2>
               </section>
-              <section className={"work page"}>
+              <section className={"page"}>
                   <h2 ref={ref3} id={'work'}>
                       <WorkPage/>
                   </h2>
               </section>
-              <section className={"skills page"}>
-                  <h2 ref={ref4} id={'skills'}>
-                      <SkillsPage/>
+              <section className={"page"}>
+                  <h2 ref={ref4} id={'moreWork'}>
+                      <MoreWork/>
                   </h2>
               </section>
-              <section className={"contact page"}>
+              <section className={"page"}>
                   <h2 ref={ref5} id={'contact'}>
                       <ContactPage/>
                   </h2>
