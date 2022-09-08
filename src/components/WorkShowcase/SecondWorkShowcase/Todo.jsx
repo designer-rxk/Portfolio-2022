@@ -1,6 +1,6 @@
 import React from "react";
 
-const FitnessApp = () =>{
+const Todo = () =>{
     return(
         <>
             <h1 className={"work-title"}>To-Do List <br/> app</h1>
@@ -27,4 +27,4 @@ const FitnessApp = () =>{
         </>
     )
 }
-export default FitnessApp;
+export default Todo;

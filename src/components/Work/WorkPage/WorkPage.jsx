@@ -1,8 +1,8 @@
 import React from "react";
 import './WorkPage.css';
 import {BiLeftArrowAlt, BiRightArrowAlt} from "react-icons/bi";
-import {AdminDashboard, Ecommerce, FitnessApp} from "../index";
-import {AdminDashboardImg, FitnessAppImg} from "../../assets";
+import {AdminDashboard, Ecommerce, FitnessApp} from "../../index";
+import {AdminDashboardImg, FitnessAppImg} from "../../../assets";
 
 const WorkPage = () =>{
     const buttons = document.querySelectorAll("[data-carousel-button]");

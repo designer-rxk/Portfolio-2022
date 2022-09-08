@@ -135,7 +135,7 @@ const ContactPage = () =>{
                                 </div>
                                 <div className={"contact-inputs"}>
                                     <div className={"contact-name"}>
-                                        <input className={"contact-input contact-name"} type={"text"} name={"user_name"} placeholder={"Name"} ref={nameRef}/>
+                                        <input className={"contact-input contact-name"} type={"text"} name={"user_name"} placeholder={"John Smith"} ref={nameRef}/>
                                     </div>
                                 </div>
                                 <div className={`contact-error ${emailError === true ? 'active-error' : ''}`}>
@@ -143,12 +143,12 @@ const ContactPage = () =>{
                                         <FaInfoCircle className={"error-icon"}/>
                                     </div>
                                     <div className={"contact-error-text"}>
-                                        Something went wrong! (me@me.com)
+                                        Something went wrong!
                                     </div>
                                 </div>
                                 <div className={"contact-inputs"}>
                                     <div className={"contact-email"}>
-                                        <input className={"contact-input contact-email"} type={"text"} name={"user_email"} placeholder={"E-mail"} ref={emailRef}/>
+                                        <input className={"contact-input contact-email"} type={"text"} name={"user_email"} placeholder={"example@me.com"} ref={emailRef}/>
                                     </div>
                                 </div>
                                 <div className={`contact-error ${subjectError === true ? 'active-error' : ''}`}>
@@ -161,7 +161,7 @@ const ContactPage = () =>{
                                 </div>
                                 <div className={"contact-inputs"}>
                                     <div className={"contact-subject"}>
-                                        <input className={"contact-input contact-subject"} type={"text"} name={"subject"} placeholder={"Subject"} ref={subjectRef}/>
+                                        <input className={"contact-input contact-subject"} type={"text"} name={"subject"} placeholder={"Example"} ref={subjectRef}/>
                                     </div>
                                 </div>
                                 <div className={`contact-error ${messageError === true ? 'active-error' : ''}`}>
