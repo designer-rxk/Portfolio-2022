@@ -161,7 +161,7 @@ const ContactPage = () =>{
                                 </div>
                                 <div className={"contact-inputs"}>
                                     <div className={"contact-subject"}>
-                                        <input className={"contact-input contact-subject"} type={"text"} name={"subject"} placeholder={"Example"} ref={subjectRef}/>
+                                        <input className={"contact-input contact-subject"} type={"text"} name={"subject"} placeholder={"Subject"} ref={subjectRef}/>
                                     </div>
                                 </div>
                                 <div className={`contact-error ${messageError === true ? 'active-error' : ''}`}>

@@ -3,7 +3,7 @@ import './Navbar.css'
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import {Modal} from "../index";
 
-const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4, ref5}) =>{
+const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4}) =>{
     const [modalStatus, setModalStatus] = useState(false);
     const checkHamburger = () =>{
         setModalStatus(prevState => !prevState);
@@ -16,8 +16,8 @@ const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4, ref5}) =>{
     }
 
     return(<>
-            <div className={`Modal ${modalStatus === true ? "fat" : "none"}`}>
-                <Modal ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} ref5={ref5} setModalStatus={setModalStatus} setOpenModal={setOpenModal} openModal={openModal}/>
+            <div className={`Modal ${modalStatus === true ? "fat" : "none" }`}>
+                <Modal ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} setModalStatus={setModalStatus} setOpenModal={setOpenModal} openModal={openModal}/>
             </div>
 
         <div className={"header"}>

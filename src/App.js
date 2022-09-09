@@ -11,7 +11,6 @@ const App = () => {
     const ref2 = useRef(null);
     const ref3 = useRef(null);
     const ref4 = useRef(null);
-    const ref5 = useRef(null);
 
     const [openModal, setOpenModal] = useState(false);
 
@@ -40,7 +39,6 @@ const App = () => {
     const isInViewport2 = useIsInViewport(ref2);
     const isInViewport3 = useIsInViewport(ref3);
     const isInViewport4 = useIsInViewport(ref4);
-    const isInViewport5 = useIsInViewport(ref5);
 
     return (
       <div className="scroll-container">
@@ -54,12 +52,9 @@ const App = () => {
                      onClick={() => directUser(ref3.current)}></p>
                   <p className={`bullets ${isInViewport4 === true ? 'active' : ''}`}
                      onClick={() => directUser(ref4.current)}></p>
-                  <p className={`bullets ${isInViewport5 === true ? 'active' : ''}`}
-                     onClick={() => directUser(ref5.current)}></p>
               </div>
           </div>
-          <Navbar openModal={openModal} setOpenModal={setOpenModal}
-          ref1={ref1.current} ref2={ref2.current} ref3={ref3.current} ref4={ref4.current} ref5={ref5.current}/>
+          <Navbar openModal={openModal} setOpenModal={setOpenModal} ref1={ref1.current} ref2={ref2.current} ref3={ref3.current} ref4={ref4.current}/>
           <div className={"section-container"}>
               <section className={"hero page"}>
                   <h2 ref={ref1} id={'hero'}>
@@ -72,17 +67,12 @@ const App = () => {
                   </h2>
               </section>
               <section className={"page"}>
-                  <h2 ref={ref3} id={'work'}>
-                      <WorkPage/>
-                  </h2>
-              </section>
-              <section className={"page"}>
-                  <h2 ref={ref4} id={'moreWork'}>
+                  <h2 ref={ref3} id={'moreWork'}>
                       <MoreWork/>
                   </h2>
               </section>
               <section className={"page"}>
-                  <h2 ref={ref5} id={'contact'}>
+                  <h2 ref={ref4} id={'contact'}>
                       <ContactPage/>
                   </h2>
               </section>
