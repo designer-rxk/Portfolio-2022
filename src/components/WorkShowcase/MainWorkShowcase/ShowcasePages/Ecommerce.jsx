@@ -1,8 +1,9 @@
 import React from "react";
+import '../WorkPage.css';
 
 const Ecommerce = () =>{
     return(
-        <>
+        <span className={"page-fade"}>
             <h2 className={"work-title"}>Ecommerce <br/> website</h2>
             <div className={"about-spans"}>
                 <span className={"divider-span"}/>
@@ -26,7 +27,7 @@ const Ecommerce = () =>{
                     View on Web
                 </button>
             </div>
-        </>
+        </span>
     )
 }
 export default Ecommerce;

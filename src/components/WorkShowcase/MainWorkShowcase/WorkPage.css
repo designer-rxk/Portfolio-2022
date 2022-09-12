@@ -40,7 +40,6 @@
     transition: 0.3s opacity ease-in-out;
     transition-delay: 0.3s;
 }
-
 .work-slide[data-active] {
     opacity: 1;
     z-index: 100;
@@ -106,19 +105,23 @@
     bottom: 0;
     right:-3.5%;
 }
-.carousel-image-one{
+.carousel-image{
     height:100%;
-    background: url("https://images.unsplash.com/photo-1504728078670-d0a59873c8c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    width:100%;
     object-fit: cover;
     z-index: 100;
     border-radius: var(--border-radius);
 }
-.carousel-image{
-    height:100%;
-    width:100%;
-    object-fit: fill;
-    z-index: 100;
-    border-radius: var(--border-radius);
+.page-fade{
+    animation: Fade 0.8s ease-in-out;
+}
+@keyframes Fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .work-title{
     font-size: 6.9rem;

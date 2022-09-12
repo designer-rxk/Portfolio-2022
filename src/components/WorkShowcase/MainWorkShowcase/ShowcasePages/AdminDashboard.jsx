@@ -2,7 +2,7 @@ import React from "react";
 
 const AdminDashboard = () =>{
     return(
-        <>
+        <span className={"page-fade"}>
             <h2 className={"work-title"}>Admin Dash <br/> website</h2>
             <div className={"about-spans"}>
                 <span className={"divider-span"}/>
@@ -27,7 +27,7 @@ const AdminDashboard = () =>{
                     </a>
                 </button>
             </div>
-        </>
+        </span>
     )
 }
 export default AdminDashboard;

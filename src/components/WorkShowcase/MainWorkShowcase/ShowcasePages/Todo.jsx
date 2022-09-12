@@ -2,7 +2,7 @@ import React from "react";
 
 const Todo = () =>{
     return(
-        <>
+        <span className={"page-fade"}>
             <h1 className={"work-title"}>To-Do List <br/> app</h1>
             <div className={"about-spans"}>
                 <span className={"divider-span"}/>
@@ -24,7 +24,7 @@ const Todo = () =>{
                     </a>
                 </button>
             </div>
-        </>
+        </span>
     )
 }
 export default Todo;

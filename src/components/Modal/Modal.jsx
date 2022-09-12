@@ -2,7 +2,7 @@ import React from "react";
 import {FaGithub, FaLinkedin} from "react-icons/fa";
 import './Modal.scss'
 
-const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, ref5, setOpenModal, openModal }) =>{
+const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, setOpenModal, openModal }) =>{
     const redirectUser = (element) =>{
         element.scrollIntoView({behavior: 'smooth'});
         setModalStatus(prevState => !prevState);
@@ -31,7 +31,7 @@ const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, ref5, setOpenModal, ope
                     </div>
                 </div>
                 <div className={"modal-item"}>
-                    <div className={`modal-text`} onClick={()=>redirectUser(ref3)}>
+                    <div className={`modal-text`} onClick={()=>redirectUser(ref4)}>
                         <div className={"underline"}>
                             Work
                         </div>
@@ -39,13 +39,6 @@ const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, ref5, setOpenModal, ope
                 </div>
                 <div className={"modal-item"}>
                     <div className={`modal-text`} onClick={()=>redirectUser(ref4)}>
-                        <div className={"underline"}>
-                            More Work
-                        </div>
-                    </div>
-                </div>
-                <div className={"modal-item"}>
-                    <div className={`modal-text`} onClick={()=>redirectUser(ref5)}>
                         <div className={"underline"}>
                             Contact
                         </div>

@@ -10,3 +10,8 @@ export { ReactComponent as Stars} from './images/stars.svg';
 export {default as ContactMain} from './images/contact-img.png';
 export {default as AdminDashboardImg} from './work-images/AdminDashboardImg.png';
 export {default as FitnessAppImg} from './work-images/FitnessApp.png';
+export {default as CalculatorImg} from './work-images/calculator.png';
+export {default as MusicImg} from './work-images/music.png';
+export {default as TodoImg} from './work-images/todo.png';
+export {default as WeatherImg} from './work-images/weather.png';
+export {default as PhoticImg} from './work-images/photic.jpg';

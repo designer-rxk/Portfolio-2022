@@ -1,28 +1,33 @@
 import React from "react";
 
-const FitnessApp = () =>{
+const Photic = () =>{
     return(
-        <>
-            <h1 className={"work-title"}>A.I. Fitness <br/> app</h1>
+        <span className={"page-fade"}>
+            <h1 className={"work-title"}>Photo gallery <br/> app</h1>
             <div className={"about-spans"}>
                 <span className={"divider-span"}/>
                 <span className={"divider-span child"}/>
             </div>
             <p className={"title-description desc-small"}>
-                This is a Python app that I made for my Bachelor's degree, where I used A.I.-<a href={"https://google.github.io/mediapipe/"}
-                                                                                                className={"work-links"} target={"_blank"} rel="noreferrer">
+                This is a Python application that I made for my Bachelor's degree, where I used A.I.-<
+                a href={"https://google.github.io/mediapipe/"} className={"work-links"} target={"_blank"} rel="noreferrer">
                 MediaPipe</a> to track the users movement and make evaluations
                 whether they are doing a curtain exercise correctly or not. The G.U.I. was made
                 using <a href={"https://docs.python.org/3/library/tkinter.html"} className={"work-links"} target={"_blank"} rel="noreferrer">Tkinter</a> and PhotoShop.
             </p>
             <div className={"work-button-container"}>
                 <button className={"work-view-button"} >
-                    <a className={"no-anchor"} href={"https://github.com/designer-rxk/project-bak"} target={"_blank"} rel="noreferrer">
+                    <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-photo-gallery"} target={"_blank"} rel="noreferrer">
+                        View on GitHub
+                    </a>
+                </button>
+                <button className={"work-view-button"}>
+                    <a className={"no-anchor"} href={"https://rxk-photic.netlify.app/"} target={"_blank"} rel="noreferrer">
                         View on GitHub
                     </a>
                 </button>
             </div>
-        </>
+        </span>
     )
 }
-export default FitnessApp;
+export default Photic;
