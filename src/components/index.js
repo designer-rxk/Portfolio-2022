@@ -10,4 +10,4 @@ export { default as FitnessApp} from './WorkShowcase/MainWorkShowcase/ShowcasePa
 export { default as Todo} from './WorkShowcase/MainWorkShowcase/ShowcasePages/Todo';
 export { default as AdminDashboard} from './WorkShowcase/MainWorkShowcase/ShowcasePages/AdminDashboard';
 export { default as Photic} from "./WorkShowcase/MainWorkShowcase/ShowcasePages/Photic";
-export { default as MusicApp} from "./WorkShowcase/MainWorkShowcase/ShowcasePages/MusicApp";
+export { default as Calculator} from "./WorkShowcase/MainWorkShowcase/ShowcasePages/Calculator";

@@ -16,16 +16,16 @@ const AdminDashboard = () =>{
                                                                                            className={"work-links"}>Tailwind.css</a>.
             </p>
             <div className={"work-button-container"}>
-                <button className={"work-view-button"}>
+                <div className={"work-view-button"}>
                     <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-admin-dashboard"} target={"_blank"} rel="noreferrer">
                         View on GitHub
                     </a>
-                </button>
-                <button className={"work-view-button"}>
+                </div>
+                <div className={"work-view-button"}>
                     <a className={"no-anchor"} href={"https://rxk-admin-dashboard.netlify.app/"} target={"_blank"} rel="noreferrer">
                         View on Web
                     </a>
-                </button>
+                </div>
             </div>
         </span>
     )

@@ -95,7 +95,8 @@
     font-family: Poppins, sans-serif;
     z-index: 300;
     font-size: 5rem;
-    right:-3.5%;
+    right:-3.4%;
+    text-shadow: 0 0 5px black;
 }
 .carousel-num{
     position: absolute;
@@ -150,12 +151,18 @@
     border:none;
     font-family: "Poppins", sans-serif;
     transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .work-view-button:hover{
     background: #ff4d5a;
 }
 .work-button-container{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .no-anchor{
     text-decoration: none;

@@ -104,7 +104,7 @@ const ContactPage = () =>{
         <div className={"contact-page"}>
             <div className={"about-title"}>
                 <h2 className={"title-text"}>
-                    <p className={"title-text-tag"}>Contact<br/> me</p>
+                    Message <br/> me
                 </h2>
                 <div className={"about-spans"}>
                     <span className={"divider-span"}/>
@@ -197,7 +197,7 @@ const ContactPage = () =>{
                     </div>
                 </div>
                 <div className={"about-page-num"}>
-                    <p>04</p>
+                    <p>03</p>
                 </div>
             </div>
         </div>

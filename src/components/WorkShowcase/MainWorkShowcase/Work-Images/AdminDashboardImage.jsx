@@ -5,6 +5,7 @@ const AdminDashboardImage = () =>{
         <span className={"page-fade"}>
             <img src={AdminDashboardImg} alt={"FitnessAppAlt"} className={"carousel-image"}/>
         </span>
-    )
+    );
 }
+
 export default AdminDashboardImage;

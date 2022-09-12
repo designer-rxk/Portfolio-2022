@@ -1,11 +1,11 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import WorkSlider from "./WorkSlider/WorkSlider";
-import {AdminDashboard, Ecommerce, FitnessApp, MusicApp, Photic} from "../../index";
-import {AdminDashboardImage, EcommerceImage, FitnessImage, MusicImage, PhoticImage} from "./index";
+import {AdminDashboard, Ecommerce, FitnessApp, Calculator, Photic, Todo} from "../../index";
+import {AdminDashboardImage, EcommerceImage, FitnessImage, CalculatorImage, PhoticImage, TodoImage} from "./index";
 
 const MoreWork = () =>{
     const [slideIndex, setSlideIndex] = useState(1);
-    const objectCount = 5;
+    const objectCount = 6;
 
     const nextSlide = () => {
         if(slideIndex !== objectCount){
@@ -35,15 +35,18 @@ const MoreWork = () =>{
                             <div className={"work-section one"}>
                                 <div className={"carousel-left"}>
                                     {slideIndex === 1 ? <Ecommerce/> : slideIndex === 2 ? <FitnessApp/> : slideIndex === 3 ? <AdminDashboard/> : slideIndex === 4 ? <Photic/> :
-                                    slideIndex === 5 ? <MusicApp/> : ''}
+                                    slideIndex === 5 ? <Calculator/> : slideIndex === 6 ? <Todo/> : ''}
                                 </div>
                                 <div className={"carousel-right"}>
                                     { slideIndex === 1 ? <EcommerceImage/> : slideIndex === 2 ? <FitnessImage/> : slideIndex === 3 ? <AdminDashboardImage/> :
-                                        slideIndex === 4 ? <PhoticImage/> : slideIndex === 5 ? <MusicImage/> : ''}
+                                        slideIndex === 4 ? <PhoticImage/> : slideIndex === 5 ? <CalculatorImage/> : slideIndex === 6 ? <TodoImage/> : ''}
                                 </div>
                             </div>
                         <WorkSlider moveSlide={nextSlide} direction={"next"}/>
                         <WorkSlider moveSlide={prevSlide} direction={"prev"}/>
+                        <div className={"work-page-num"}>
+                            <p>02</p>
+                        </div>
                 </div>
             </div>
         </div>

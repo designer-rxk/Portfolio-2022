@@ -9,23 +9,21 @@ const Photic = () =>{
                 <span className={"divider-span child"}/>
             </div>
             <p className={"title-description desc-small"}>
-                This is a Python application that I made for my Bachelor's degree, where I used A.I.-<
-                a href={"https://google.github.io/mediapipe/"} className={"work-links"} target={"_blank"} rel="noreferrer">
-                MediaPipe</a> to track the users movement and make evaluations
-                whether they are doing a curtain exercise correctly or not. The G.U.I. was made
-                using <a href={"https://docs.python.org/3/library/tkinter.html"} className={"work-links"} target={"_blank"} rel="noreferrer">Tkinter</a> and PhotoShop.
+                This is a web application that servers the purpose of a photo gallery. The frontend was made with React.js and JavaScript and the backend was made
+                with <a href={"https://firebase.google.com/"} className={"work-links"} target={"_blank"} rel="noreferrer">Google Firebase</a>. The purpose
+                of this project was to learn about API requests, and how they work, as well as to learn about both the frontend and the backend development.
             </p>
             <div className={"work-button-container"}>
-                <button className={"work-view-button"} >
+                <div className={"work-view-button"} >
                     <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-photo-gallery"} target={"_blank"} rel="noreferrer">
                         View on GitHub
                     </a>
-                </button>
-                <button className={"work-view-button"}>
+                </div>
+                <div className={"work-view-button"}>
                     <a className={"no-anchor"} href={"https://rxk-photic.netlify.app/"} target={"_blank"} rel="noreferrer">
-                        View on GitHub
+                        View on Web
                     </a>
-                </button>
+                </div>
             </div>
         </span>
     )

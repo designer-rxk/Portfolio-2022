@@ -18,14 +18,16 @@ const Ecommerce = () =>{
                 purchases of any of the selected items.
             </p>
             <div className={"work-button-container"}>
-                <button className={"work-view-button"}>
-                    <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-ecommerce"} target={"_blank"} rel="noreferrer">
+                <div className={"work-view-button"}>
+                    <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-next-ecommerce"} target={"_blank"} rel="noreferrer">
                         View on GitHub
                     </a>
-                </button>
-                <button className={"work-view-button"}>
-                    View on Web
-                </button>
+                </div>
+                <div className={"work-view-button"}>
+                    <a className={"no-anchor"} href={"https://rxk-react-next-ecommerce.vercel.app/"} target={"_blank"} rel="noreferrer">
+                        View on Web
+                    </a>
+                </div>
             </div>
         </span>
     )
