@@ -1,6 +1,6 @@
 import './App.css';
 import {useEffect, useMemo, useRef, useState} from "react";
-import {HeroPage, AboutPage, MoreWork, WorkPage, ContactPage, Navbar} from "./components";
+import {HeroPage, AboutPage, MoreWork, ContactPage, Navbar} from "./components";
 
 const directUser = (element) => {
     element.scrollIntoView({behavior: 'smooth'});

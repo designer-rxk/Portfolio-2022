@@ -32,7 +32,6 @@
 }
 .about-spans{
     display: inline-block;
-    margin-bottom: 1.6rem;
 }
 .title-description{
     font-weight: 300;
@@ -88,4 +87,5 @@
     z-index: 200;
     font-size: 5rem;
     right:6%;
+    text-shadow: 0 0 5px black;
 }

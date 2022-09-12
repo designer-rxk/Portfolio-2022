@@ -81,7 +81,6 @@ const HeroPage = () =>{
                             PORTFOLIO
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
