@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {useEffect, useMemo, useRef, useState} from "react";
 import {HeroPage, AboutPage, MoreWork, ContactPage, Navbar} from "./components";
 

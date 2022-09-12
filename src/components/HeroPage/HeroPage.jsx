@@ -1,5 +1,5 @@
 import React from "react";
-import './HeroPage.css'
+import './HeroPage.scss'
 import {Cloud1, Cloud2, Cloud3, Cloud4, Cloud5, Moon, Moonlight, Stars} from "../../assets";
 
 const HeroPage = () =>{
