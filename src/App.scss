@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
 body{
     padding:0;
     font-family: 'Poppins', sans-serif;
@@ -40,7 +48,6 @@ body{
 .bullets{
     width:25px;
     height:5px;
-    border-radius: 1px;
     background: aliceblue;
     cursor: pointer;
     transition-duration: 0.5s;
@@ -49,4 +56,9 @@ body{
 .active{
     width:50px;
     background:#ff4d5a;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .inner{
+        margin:0.7rem;
+    }
 }

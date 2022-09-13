@@ -45,6 +45,7 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
   transform: translateY(calc(25% - 9em));
 }
 .modal-item{
+  margin-bottom: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +56,7 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color:white;
-  font-size: 6em;
+  font-size: 6vw;
   cursor: pointer;
   transition-duration: 0.4s;
   letter-spacing: 0.1em;
@@ -70,7 +71,8 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
   position: absolute;
   left:50%;
   right:50%;
-  bottom:15%;
+  bottom:0;
+  display: none;
 }
 .modal-icon{
   color:white;
@@ -96,20 +98,18 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
     transition: background-position 0.4s;
   }
 }
-@media screen and (max-width: 1024px) {
-  .modal-container{
-    position: absolute;
-    top:10%;
-  }
-  .modal-text{
-    font-size: 3em;
-  }
-  .modal-links{
-    bottom:17.5%;
-  }
-}
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 0px) and (max-width: 1199px) {
   .modal-links{
     display: none;
+  }
+  .modal-item{
+    margin-bottom: 3rem;
+  }
+  .modal-text{
+    margin-top:1.5rem;
+    font-size: 5rem;
+  }
+  .modal-links{
+    display: flex;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import '../WorkPage.css';
+import '../WorkPage.scss';
 
 const Ecommerce = () =>{
     return(
@@ -10,12 +10,14 @@ const Ecommerce = () =>{
                 <span className={"divider-span child"}/>
             </div>
             <p className={"title-description desc-small"}>
-                This was a ecommerce website I made for fun. It uses <a href={"https://www.sanity.io/"} target={"_blank"} rel="noreferrer"
-                                                                        className={"work-links"}>
-                Sanity.io</a> for
-                the backend, React.js for the frontend and <a href={"https://tailwindcss.com/"} target={"_blank"} rel="noreferrer"
-                                                              className={"work-links"}>Tailwind.css</a> to add some style and thus allows the users to make fake
-                purchases of any of the selected items.
+                <span className={"work-desc-box"}>
+                    This was a ecommerce website I made for fun. It uses <a href={"https://www.sanity.io/"} target={"_blank"} rel="noreferrer"
+                                                                            className={"work-links"}>
+                    Sanity.io</a> for
+                    the backend, React.js for the frontend and <a href={"https://tailwindcss.com/"} target={"_blank"} rel="noreferrer"
+                                                                  className={"work-links"}>Tailwind.css</a> to add some style and thus allows the users to make fake
+                    purchases of any of the selected items.
+                </span>
             </p>
             <div className={"work-button-container"}>
                 <div className={"work-view-button"}>

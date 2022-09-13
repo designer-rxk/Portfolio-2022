@@ -32,21 +32,21 @@ const MoreWork = () =>{
                 <div className={"work-left"}/>
                 <div className={"work-right"}>
                     <div className={"work-carousel"}>
-                            <div className={"work-section one"}>
-                                <div className={"carousel-left"}>
-                                    {slideIndex === 1 ? <Ecommerce/> : slideIndex === 2 ? <FitnessApp/> : slideIndex === 3 ? <AdminDashboard/> : slideIndex === 4 ? <Photic/> :
-                                    slideIndex === 5 ? <Calculator/> : slideIndex === 6 ? <Todo/> : ''}
-                                </div>
-                                <div className={"carousel-right"}>
-                                    { slideIndex === 1 ? <EcommerceImage/> : slideIndex === 2 ? <FitnessImage/> : slideIndex === 3 ? <AdminDashboardImage/> :
-                                        slideIndex === 4 ? <PhoticImage/> : slideIndex === 5 ? <CalculatorImage/> : slideIndex === 6 ? <TodoImage/> : ''}
-                                </div>
+                        <div className={"work-section one"}>
+                            <div className={"carousel-left"}>
+                                {slideIndex === 1 ? <Ecommerce/> : slideIndex === 2 ? <FitnessApp/> : slideIndex === 3 ? <AdminDashboard/> : slideIndex === 4 ? <Photic/> :
+                                slideIndex === 5 ? <Calculator/> : slideIndex === 6 ? <Todo/> : ''}
                             </div>
+                            <div className={"carousel-right"}>
+                                { slideIndex === 1 ? <EcommerceImage/> : slideIndex === 2 ? <FitnessImage/> : slideIndex === 3 ? <AdminDashboardImage/> :
+                                    slideIndex === 4 ? <PhoticImage/> : slideIndex === 5 ? <CalculatorImage/> : slideIndex === 6 ? <TodoImage/> : ''}
+                            </div>
+                        </div>
                         <WorkSlider moveSlide={nextSlide} direction={"next"}/>
                         <WorkSlider moveSlide={prevSlide} direction={"prev"}/>
                         <div className={"work-page-num"}>
                             <p>02</p>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>

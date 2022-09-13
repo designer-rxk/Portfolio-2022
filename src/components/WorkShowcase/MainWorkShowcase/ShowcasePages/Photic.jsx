@@ -10,8 +10,8 @@ const Photic = () =>{
             </div>
             <p className={"title-description desc-small"}>
                 This is a web application that servers the purpose of a photo gallery. The frontend was made with React.js and JavaScript and the backend was made
-                with <a href={"https://firebase.google.com/"} className={"work-links"} target={"_blank"} rel="noreferrer">Google Firebase</a>. The purpose
-                of this project was to learn about API requests, and how they work, as well as to learn about both the frontend and the backend development.
+                with <a href={"https://firebase.google.com/"} className={"work-links"} target={"_blank"} rel="noreferrer">Google Firebase</a>. <span className={"read-more"}>The purpose
+                of this project was to learn about API requests and both the frontend and the backend development.</span>
             </p>
             <div className={"work-button-container"}>
                 <div className={"work-view-button"} >

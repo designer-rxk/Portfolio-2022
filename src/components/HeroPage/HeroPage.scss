@@ -1,36 +1,82 @@
-.hero-wrapper{
-    height:100vh;
-    width:100%;
+main{
     display: block;
 }
-.cutoff{
-    height:0.001rem;
- }
-.hero-main{
-    margin-left:calc(3rem + 50px);
-    height:100vh;
-    width:100%;
+body{
+    font-family: "Poppins", sans-serif;
+    color:aliceblue;
+    overflow-x: hidden;
+    text-size-adjust:100%;
+    line-height: 1;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    -webkit-tap-highlight-color: white;
+    box-sizing: border-box;
+}
+.barba-container{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.fullpage, .fullpage-wrapper{
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px);
+}
+.fp-section{
+    position: relative;
+    box-sizing: border-box;
+}
+.fp-section, .fp-table{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.fp-tableCell{
+    text-size-adjust: 100%;
+    color: #828c96;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    height: 800px;
+}
+.fullpage-slide{
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    width: 100%;
+    height: 100vh;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
-    justify-items: center;
+    position: relative;
+    color: #fff;
 }
 .title{
-    margin-left:2.5rem;
-    display: block;
-    justify-items: center;
-    align-items: center;
-    height:auto;
-}
-.name-surname{
-    transition-duration: 3s;
-    color:white;
-    font-size: 6rem;
-    line-height: 1;
-    letter-spacing: 0.1em;
-    margin-bottom: 1.6rem;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+    color: #fff;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    z-index: 200;
+    margin-left: 11%;
 }
 .divider-span{
     margin-left:25px;
@@ -44,86 +90,62 @@
 .child{
     margin-left:75px;
 }
-.current-title{
-    font-weight: 300;
-    color:white;
-    text-align: left;
-    font-size: 1.5rem;
-    text-shadow: 0 10px 15px rgb(2 11 22 / 20%);
-}
-.portfolio-text{
-    color:#ff4d5a;
-    font-family: inherit;
+.title__text{
+    font-size: 6rem;
+    line-height: 1;
     letter-spacing: 0.1em;
-    font-size:  4rem;
-    text-shadow: 0 10px 15px rgb(2 11 22 / 20%);
-    position: absolute;
+    margin-bottom: 1.6rem;
+    font-family: Poppins, sans-serif;
+    font-weight: normal;
+    text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
 }
-.moon-background{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -100;
+.title .border{
+    display: inline-block;
+
 }
-.moonlight{
-    position: absolute;
-    top: -20%;
-    bottom: 0;
-    left: 30%;
-    margin: auto;
-    z-index: -100;
+.title .border span:first-child{
+    margin-bottom: 1.4rem;
 }
-.moonlight-wrapper{
-    position: relative;
-    pointer-events: none;
-}
-.moonlight-image{
-    position: relative;
+.title .border span{
     display: block;
-    left: 0;
-    top: 0;
+    border-radius: 5px;
+    background: #ff4d5a;
 }
-.stars{
-    width:auto;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 30%;
-    z-index: -100;
+.title .border span:last-child{
+    margin-left:54px;
 }
-.stars-wrapper{
-    position: relative;
+.title .border span{
     display: block;
-    left: 0px;
-    top: 0px;
-    width:100%;
-    height:100%;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background: #ff4d5a;
 }
-.stars-image-container{
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+.title__lead{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    word-wrap: break-word;
+    white-space: normal;
 }
-.stars-image-itself{
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    width: 100%;
+.desc-portfolio{
+    position: absolute;
+    top:calc(50% - 4.2rem);
+    left:-27.5%;
+    z-index: 300;
+    color:#ff4d5a;
+    font-size: 4.2rem;
 }
-.planets{
+.moon{
+    position: absolute;
     top: 0;
     bottom: 0;
-    left: 30%;
+    left: 29.427%;
     margin: auto;
-    height: 100%;
-    width: 100%;
+    height: 1385px;
+    width: 1385px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -134,101 +156,192 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-.planet-container{
+.moon__img{
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
     position: relative;
-    width: 40%;
-    height: 40%;
+    width: 39.350180505%;
+    height: 39.350180505%;
     transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
     transform-style: preserve-3d;
     backface-visibility: hidden;
     pointer-events: none;
 }
-.moon{
-    width: 100%;
-    height: 100%;
-    transform: translate3d(-27.2px, 11px, 0px);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    position: absolute;
-    display: block;
-    left: 0px;
-    top: -14%;
-}
-.moon-back{
-    z-index: -100;
-}
-.moon-front{
-    z-index: 200;
-}
-.portfolio-text{
-    position: absolute;
-    left: -20%;
-    top: 30%;
-    font-weight: 800;
-}
-.cloud-front{
-    top: 20%;
-    right: -50%;
-    width: 90%;
-}
-.cloud{
-    position: absolute;
-}
 .layer{
     width:100%;
     height:100%;
 }
-.moon-front1{
-    transform: translate3d(-32.7px, 3px, 0px);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
+.moon__front{
+    z-index: 200;
+}
+.moon__back{
+    z-index: -100;
+}
+.cloud--back2{
+    top: 5%;
+    left: -38.715596%;
+    width: 87.155%;
+}
+.cloud{
     position: absolute;
-    display: block;
-    left: 0px;
-    top: 0px;
 }
-.moon-front2{
-    transform: translate3d(-38.1px, 19px, 0px);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    position: absolute;
-    display: block;
-    left: 0px;
-    top: 0px;
-}
-.moon-front3{
-    transform: translate3d(-38.1px, 14px, 0px);
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    position: absolute;
-    display: block;
-    left: 0px;
-    top: 0px;
-}
-.cloud-front2{
-    bottom: -55%;
-    right: -25%;
-    width: 87.5%;
-}
-.cloud-image{
+.cloud1{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     width: 100%;
 }
-.cloud-front3{
-    bottom: -5.137614678%;
-    left: -49.357798%;
+.cloud--front2{
+    bottom: -25%;
+    right: -30%;
     width: 87.155%;
+    z-index: 200;
 }
-.cloud-back3{
-    top: -6%;
-    left: -38.715596%;
+.cloud--front1{
+    top: 20%;
+    right: -49.357798%;
+    width: 88.44%;
+    z-index: 200;
+}
+.cloud--front3{
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #fff;
+    pointer-events: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: -15%;
+    left: -50%;
     width: 87.155%;
+    opacity: 1;
+    transform: translateX(0%) translateZ(0px);
+}
+.cloud--back1{
+    top: -17.5%;
+    right: -10%;
+    width: 69.724%;
+}
+.moon-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     z-index: -100;
 }
-.cloud-back2{
-    top: -22.38532%;
-    right: -7.706422%;
-    width: 69.724%;
+.moonlight{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 29.427%;
+    margin: auto;
+    height: 1385px;
+    width: 1385px;
+    z-index: -100;
+}
+.moonlight__wrap{
+    width:100%;
+    height:100%;
+}
+.star{
+    width: 1300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 29.427%;
+    z-index: -100;
+}
+.star__img{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.moon1{
+    position: absolute;
+    height: 1385px;
+    width: 1385px;
+    top:0%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+    .name-surname{
+        font-size: 5rem;
+    }
+    .mini-desc{
+        font-size: 1rem;
+    }
+    .desc-portfolio{
+        font-size: 3.6rem;
+        top:calc(50% - 3.6rem);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .name-surname{
+        font-size: 3.5rem;
+    }
+    .mini-desc{
+        font-size: 0.9rem;
+    }
+    .desc-portfolio{
+        font-size: 3.2rem;
+        top:calc(50% - 3.2rem);
+
+    }
+    .moon, .cloud--front1, .cloud--front2, .cloud--front3, .cloud--back1, .cloud--back2, .moonlight{
+        scale:0.9;
+        transform: translateX(-7.5%);
+    }
+    .divider-span{
+        scale:0.75;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .name-surname{
+        font-size: 2.5rem;
+        line-height: 0;
+        letter-spacing: 0.1em;
+        margin-left: 2rem;
+    }
+    .mini-desc{
+        font-size: 0.9rem;
+        margin-left: 2rem;
+    }
+    .desc-portfolio{
+        font-size: 2.8rem;
+        top:calc(50% - 4.8rem);
+        left:-25%;
+    }
+    .moon, .cloud--front1, .cloud--front2, .cloud--front3, .cloud--back1, .cloud--back2, .moonlight{
+        scale:0.6;
+        transform: translateX(-40%);
+    }
+    .cloud--front3{
+        left: -15%;
+        bottom: 0%;
+        scale:0.7;
+    }
+    .cloud--back2{
+        left: -25%;
+    }
+    .cloud--front1{
+        right:-12.5%;
+    }
 }

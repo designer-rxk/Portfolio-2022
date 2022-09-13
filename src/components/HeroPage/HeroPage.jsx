@@ -5,85 +5,100 @@ import {Cloud1, Cloud2, Cloud3, Cloud4, Cloud5, Moon, Moonlight, Stars} from "..
 const HeroPage = () =>{
 
     return(
-        <div className={"hero-wrapper"}>
-            <div className={"cutoff"}/>
-            <div className={"hero-main"}>
-                <div className={"moon-background"}>
-                    <div className={"stars"}>
-                        <div className={"stars-wrapper"}>
-                            <div className={"stars-image-container"}>
-                                <div className={"stars-image-itself"}>
-                                    <Stars/>
+        <main className={"barba-wrapper"}>
+            <div  className={"barba-container"}>
+                <div className={"fullpage fullpage-wrapper"}>
+                    <div className={"section fp-section tp-table tp-completely fp-section-1"}>
+                        <div className={"fp-tableCell"}>
+                            <div className={"fullpage-slide"}>
+                                <div className={"title title--top"}>
+                                    <h1 className={"title__text js-letter"}>
+                                        <span className={"name-surname"}>Raivis</span> <br/> <span className={"name-surname"}>Kārkliņš</span>
+                                    </h1>
+                                    <div className={"border js-letter"}>
+                                        <span className={"divider-span"}/>
+                                        <span className={"divider-span child "}/>
+                                    </div>
+                                    <p className={"title__lead js-letter mini-desc"}>
+                                        junior frontend developer && <br/>
+                                        web design enthusiast
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={"moonlight"}>
-                        <div className={"moonlight-wrapper"}>
-                            <div className={"moonlight-image"}>
-                                <Moonlight/>
-                                <Stars/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <div className={"moon"}>
+                                    <div className={"moon__img js-parralax-moon"}>
+                                        <div className={"moon__front layer"}>
+                                            <div className={"moon__text-wrap"}>
+                                                <p className={"moon__text js-moon desc-portfolio"}>
+                                                    PORTFOLIO
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className={"moon__front layer"}>
+                                            <div className={"cloud cloud--front1 js-moon"}>
+                                                <span className={"cloud1"}>
+                                                    <Cloud1/>
+                                                </span>
 
-                <div className={"title"}>
-                    <div className={"name-surname"}>Raivis <br/>Kārkliņš</div>
-                    <span className={"divider-span"}/>
-                    <span className={"divider-span child"}/>
-                    <div className={"current-title"}>
-                        junior front end developer &&
-                        <br/> web design enthusiast
-                    </div>
-                </div>
-                <div className={"planets"}>
-                    <div className={"planet-container"}>
-                        <div className={"moon moon-back"}>
-                            <Moon/>
-                        </div>
-                        <div className={"moon-front layer"}>
-                            <div className={"cloud cloud-front"}>
-                                <div className={"cloud-image"}>
-                                    <Cloud1/>
+                                            </div>
+                                        </div>
+                                        <div className={"moon__back layer"}>
+                                            <div className={"cloud cloud--back2 js-moon"}>
+                                                <span className={"cloud1"}>
+                                                    <Cloud2/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className={"moon__front layer"}>
+                                            <div className={"cloud cloud--front2 js-moon"}>
+                                                <span className={"cloud1"}>
+                                                    <Cloud3/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className={"moon__back layer"}>
+                                            <span className={"moon1"}>
+                                                <Moon/>
+                                            </span>
+                                        </div>
+                                        <div className={"moon__front layer"}>
+                                            <div className={"cloud cloud--front3 js-moon"}>
+                                                <span className={"cloud1"}>
+                                                    <Cloud4/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className={"moon__back layer"}>
+                                            <div className={"cloud cloud--back1 js-moon"}>
+                                                <span className={"cloud1"}>
+                                                    <Cloud5/>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className={"moon-front2 layer"}>
-                            <div className={"cloud cloud-front2"}>
-                                <div className={"cloud-image"}>
-                                    <Cloud3/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={"moon-front3 layer"}>
-                            <div className={"cloud cloud-front3"}>
-                                <div className={"cloud-image"}>
-                                    <Cloud4/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={"moon-back layer"}>
-                            <div className={"cloud cloud-back3"}>
-                                <div className={"cloud-image"}>
-                                    <Cloud2/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={"moon-back layer"}>
-                            <div className={"cloud cloud-back2"}>
-                                <div className={"cloud-image"}>
-                                    <Cloud5/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={"portfolio-text"}>
-                            PORTFOLIO
                         </div>
                     </div>
                 </div>
+                <div className={"moon-background"}>
+                    <div className={"moonlight"}>
+                        <div className={"moonlight_wrap js-parralax-moonlight"}>
+                            <div className={"layer moonlight__img"}>
+                                <Moonlight/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={"star js-parralax-star"}>
+                    <div className={"layer"}>
+                        <div className={"star__img"}>
+                            <Stars/>
+                        </div>
+                    </div>
+                </div>
+                <div className={"sky-color"}/>
             </div>
-        </div>
+        </main>
     )
 }
 export default HeroPage;

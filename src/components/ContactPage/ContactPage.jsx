@@ -102,15 +102,15 @@ const ContactPage = () =>{
 
     return(
         <div className={"contact-page"}>
-            <div className={"about-title"}>
-                <h2 className={"title-text"}>
-                    Message <br/> me
+            <div className={"contact-title-main"}>
+                <h2 className={"title-text contact-text"}>
+                    Message <br className={"break"}/> me
                 </h2>
                 <div className={"about-spans"}>
                     <span className={"divider-span"}/>
                     <span className={"divider-span child"}/>
                 </div>
-                <p className={"title-description"}>
+                <p className={"title-description contact-desc"}>
                     Let's chat about tech, games, <br/> sports, philosophy or<br/> simply work.
                 </p>
             </div>
@@ -124,7 +124,7 @@ const ContactPage = () =>{
                     <div className={"contact-right"}>
                         <div className={"contact-right-container"}>
                             <form className={"contact-form"} ref={formRef} onSubmit={(e) => checkInputs(e)}>
-                                <h3 className={"contact-title"}>Get in touch</h3>
+                                <div className={"contact-title"}>Get in touch</div>
                                 <div className={`contact-error ${nameError === true ? 'active-error' : ''}`}>
                                     <div>
                                         <FaInfoCircle className={"error-icon"}/>
