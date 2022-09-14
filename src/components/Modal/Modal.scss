@@ -98,6 +98,28 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
     transition: background-position 0.4s;
   }
 }
+.test{
+  animation: Underline 1.3s forwards;
+}
+@keyframes Underline {
+  from{
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(white, white);
+    background-position: right -100% bottom 0;
+    background-size: 200% 10px;
+    background-repeat: no-repeat;
+  }
+  to{
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(white, white);
+    background-position: left -100% bottom 0;
+    background-size: 200% 10px;
+    background-repeat: no-repeat;
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 1199px) {
   .modal-links{
     display: none;

@@ -88,7 +88,7 @@ const App = () => {
           <div className="intro">
               <div className="intro-text">
                   <h1 className="hide">
-                      <span className="text intro-left">Welcome</span>
+                      <div className="text intro-left test">Welcome</div>
                   </h1>
               </div>
           </div>
