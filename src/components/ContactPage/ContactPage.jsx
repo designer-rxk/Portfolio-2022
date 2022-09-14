@@ -1,10 +1,11 @@
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import './ContactPage.scss';
 import {FaGithub, FaLinkedin, FaInfoCircle} from "react-icons/fa";
 import {ContactMain} from "../../assets";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import { injectStyle } from "react-toastify/dist/inject-style";
+import {gsap} from "gsap";
 
 if (typeof window !== "undefined") {
     injectStyle();
@@ -43,7 +44,7 @@ const notify = (messageStatus) => {
     }
 }
 
-const ContactPage = () =>{
+const ContactPage = (active) =>{
     const [nameError, setNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [subjectError, setSubjectError] = useState(false);
@@ -55,6 +56,21 @@ const ContactPage = () =>{
     const messageRef = useRef(null);
     const formRef = useRef();
 
+    const [playedContact, setPlayedContact] = useState(false);
+    if( active.isInViewport4 === true && playedContact === false ){
+        setPlayedContact(true);
+    }
+
+    useEffect(() => {
+        const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const txt_tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const txt_tl1 = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const txt_tl2 = gsap.timeline({ defaults: { ease: "power1.out" } });
+        tl.fromTo(".contact-wrapper", { opacity: 0, translateY: "50%" }, { opacity: 1, translateY: "0%", duration: 1, delay: 0.25 });
+        txt_tl1.fromTo(".divider-span", { opacity: 0, translateX: "-50%" }, { opacity: 1, translateX: "0%", duration: 0.5, delay: 0.25 });
+        txt_tl.fromTo(".contact-desc", { opacity: 0, translateX: "-50%" }, { opacity: 1, translateX: "0%", duration: 0.5, delay: 0.25 });
+        txt_tl2.fromTo(".contact-text", { opacity: 0, translateX: "-50%" }, { opacity: 1, translateX: "0%", duration: 0.5, delay: 0.25 });
+    }, [playedContact]);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -184,10 +200,10 @@ const ContactPage = () =>{
                                 </div>
                                 <div className={"contact-inputs"}>
                                     <div className={"contact-links"}>
-                                        <a href={"https://www.linkedin.com/"} target={"_blank"} rel="noreferrer">
+                                        <a href={"https://www.linkedin.com/in/raivis-karklins/"} target={"_blank"} rel="noreferrer" className={"contact-link"}>
                                             <FaLinkedin className={"contact-icons"}/>
                                         </a>
-                                        <a href={"https://github.com/designer-rxk"} target={"_blank"} rel="noreferrer">
+                                        <a href={"https://github.com/designer-rxk"} target={"_blank"} rel="noreferrer" className={"contact-link"}>
                                             <FaGithub className={"contact-icons"}/>
                                         </a>
                                     </div>
@@ -196,7 +212,7 @@ const ContactPage = () =>{
                         </div>
                     </div>
                 </div>
-                <div className={"about-page-num"}>
+                <div className={"work-page-num"}>
                     <p>03</p>
                 </div>
             </div>

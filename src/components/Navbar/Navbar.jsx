@@ -17,7 +17,7 @@ const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4}) =>{
 
     return(<>
             <div className={`Modal ${modalStatus === true ? "fat" : "none" }`}>
-                <Modal ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} setModalStatus={setModalStatus} setOpenModal={setOpenModal} openModal={openModal}/>
+                <Modal ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} setModalStatus={setModalStatus} setOpenModal={setOpenModal} openModal={openModal} />
             </div>
 
         <div className={"header"}>
@@ -29,7 +29,7 @@ const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4}) =>{
             </div>
             <div className={"links"}>
                 <div className={"icon-wrapper"}>
-                    <a href={"https://www.linkedin.com/"} target={"_blank"} rel="noreferrer">
+                    <a href={"https://www.linkedin.com/in/raivis-karklins/"} target={"_blank"} rel="noreferrer">
                         <FaLinkedin className={"icon"}/>
                     </a>
                     <a href={"https://github.com/designer-rxk"} target={"_blank"} rel="noreferrer">

@@ -134,8 +134,8 @@
 .contact-icons{
     color: white;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+    height: 1.5vw;
+    width: 1.5vw;
     margin: 1rem;
     transition-duration: 0.3s;
 }
@@ -179,6 +179,10 @@
     .contact-title{
         font-size: 3.5vw;
     }
+    .contact-icons{
+        height: 2rem;
+        width: 2rem;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .contact-left{
@@ -202,6 +206,10 @@
         font-size: 3rem;
         margin-left:7.5%;
     }
+    .contact-icons{
+        height: 2rem;
+        width: 2rem;
+    }
 }
 .contact-title-main{
     color: #fff;
@@ -216,6 +224,10 @@
 @media screen and (min-width: 0px) and (max-width: 768px) {
     .contact-left{
         width:0;
+    }
+    .contact-icons{
+        height: 2rem;
+        width: 2rem;
     }
     .contact-right{
         width:90%;

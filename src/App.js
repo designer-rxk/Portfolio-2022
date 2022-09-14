@@ -1,6 +1,7 @@
 import './App.scss';
 import {useEffect, useMemo, useRef, useState} from "react";
 import {HeroPage, AboutPage, MoreWork, ContactPage, Navbar} from "./components";
+import {gsap} from "gsap";
 
 const directUser = (element) => {
     element.scrollIntoView({behavior: 'smooth'});
@@ -35,6 +36,12 @@ const App = () => {
         return isIntersecting;
     }
 
+    useEffect(() => {
+        const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        tl.fromTo(".intro-left", { opacity: 0 }, { opacity: 1.5, duration: 1.5 });
+        tl.to(".intro", { y: "-100%", duration: 0.5, delay: 0.75 }, "-=1");
+    },[]);
+
     const isInViewport1 = useIsInViewport(ref1);
     const isInViewport2 = useIsInViewport(ref2);
     const isInViewport3 = useIsInViewport(ref3);
@@ -63,20 +70,30 @@ const App = () => {
               </section>
               <section className={"page"}>
                   <h2 ref={ref2} id={'about'}>
-                      <AboutPage />
+                      <AboutPage isInViewport2={isInViewport2}/>
                   </h2>
               </section>
               <section className={"page"}>
                   <h2 ref={ref3} id={'moreWork'}>
-                      <MoreWork/>
+                      <MoreWork isInViewport3={isInViewport3}/>
                   </h2>
               </section>
               <section className={"page"}>
                   <h2 ref={ref4} id={'contact'}>
-                      <ContactPage/>
+                      <ContactPage isInViewport4={isInViewport4}/>
                   </h2>
               </section>
           </div>
+
+          <div className="intro">
+              <div className="intro-text">
+                  <h1 className="hide">
+                      <span className="text intro-left">Welcome</span>
+                  </h1>
+              </div>
+          </div>
+
+
       </div>
   );
 }

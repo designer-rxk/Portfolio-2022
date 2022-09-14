@@ -1,7 +1,24 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './AboutPage.scss';
+import {gsap} from "gsap";
 
-const AboutPage = () =>{
+
+const AboutPage = (active) =>{
+    const [played, setPlayed] = useState(false);
+    if( active.isInViewport2 === true && played === false ){
+        setPlayed(true);
+    }
+    useEffect(() => {
+        const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const txt_tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const txt_tl1 = gsap.timeline({ defaults: { ease: "power1.out" } });
+        const txt_tl2 = gsap.timeline({ defaults: { ease: "power1.out" } });
+        tl.fromTo(".about-image", { opacity: 0, translateY: "-50%" }, { opacity: 1, translateY: "0%", duration: 0.75,delay: 0.4 })
+        txt_tl1.fromTo(".divider-span", { opacity: 0, translateX: "-50%" }, { opacity: 1, translateX: "0%", duration: 0.5, delay: 0.2 });
+        txt_tl.fromTo(".about-text", { opacity: 0, translateX: "-50%" }, { opacity: 1, translateX: "0%", duration: 0.5, delay: 0.2 });
+        txt_tl2.fromTo(".desc-box", { opacity: 0, translateX: "-50%" }, { opacity: 1, translateX: "0%", duration: 0.25, delay: 0.2 });
+    }, [played]);
+
     return(
         <div className={"entire-page"}>
             <div className={"about-title"}>

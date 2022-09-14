@@ -13,6 +13,7 @@ const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, setOpenModal, openModal
             setOpenModal(false);
         }
     }
+
     return(
         <div className={"modal-test"} >
             <div className={"modal-container"}>
@@ -31,7 +32,7 @@ const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, setOpenModal, openModal
                     </div>
                 </div>
                 <div className={"modal-item"}>
-                    <div className={`modal-text`} onClick={()=>redirectUser(ref4)}>
+                    <div className={`modal-text`} onClick={()=>redirectUser(ref3)}>
                         <div className={"underline"}>
                             Work
                         </div>
@@ -46,7 +47,7 @@ const Modal = ({ setModalStatus, ref1, ref2, ref3, ref4, setOpenModal, openModal
                 </div>
 
                 <div className={"modal-item modal-links"}>
-                    <a href={"https://www.linkedin.com/"} target={"_blank"} rel="noreferrer">
+                    <a href={"https://www.linkedin.com/in/raivis-karklins/"} target={"_blank"} rel="noreferrer">
                         <FaLinkedin className={"modal-icon"}/>
                     </a>
                     <a href={"https://github.com/designer-rxk"} target={"_blank"} rel="noreferrer">
