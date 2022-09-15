@@ -4,12 +4,12 @@ import '../WorkPage.scss';
 const Ecommerce = () =>{
     return(
         <span className={"page-fade"}>
-            <h2 className={"work-title"}>Ecommerce <br/> website</h2>
-            <div className={"about-spans"}>
+            <h2 className={"work-title mobile-hide"}>Ecommerce <br/> website</h2>
+            <div className={"about-spans mobile-hide"}>
                 <span className={"divider-span"}/>
                 <span className={"divider-span child"}/>
             </div>
-            <p className={"title-description desc-small"}>
+            <p className={"title-description desc-small mobile-hide"}>
                 <span className={"work-desc-box"}>
                     This was a ecommerce website I made for fun. It uses <a href={"https://www.sanity.io/"} target={"_blank"} rel="noreferrer"
                                                                             className={"work-links"}>
@@ -19,7 +19,7 @@ const Ecommerce = () =>{
                     purchases of any of the selected items.
                 </span>
             </p>
-            <div className={"work-button-container"}>
+            <div className={"work-button-container mobile-hide"}>
                 <div className={"work-view-button"}>
                     <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-next-ecommerce"} target={"_blank"} rel="noreferrer">
                         View on GitHub

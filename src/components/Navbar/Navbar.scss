@@ -35,7 +35,7 @@ $hamburger-zindex: $menu-zindex + 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw;
+  font-size: 2rem;
   text-align: left;
   letter-spacing: 0.1em;
   font-weight: 400;
@@ -50,8 +50,8 @@ $hamburger-zindex: $menu-zindex + 10;
 
 .icon{
   color:white;
-  height:1.5vw;
-  width:1.5vw;
+  height: 2rem;
+  width: 2rem;
   margin:1rem;
   cursor: pointer;
   transition-duration: 0.4s;
@@ -133,13 +133,14 @@ $hamburger-zindex: $menu-zindex + 10;
   width: $hamburger-width;
   z-index: $hamburger-zindex;
 
+  margin-right:1rem;
+  margin-top:1rem;
+
   span {
     display: block;
-    left: calc(25% - 18.75px );
     position: absolute;
-    top: calc(75% - 3px );
     transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,  transform 0.2s linear;
-    width: 37.5px;
+    width: 100%;
 
     &:hover{
       color: #ff4d5a;
@@ -154,7 +155,7 @@ $hamburger-zindex: $menu-zindex + 10;
       position: absolute;
       transform-origin: 50% 50%;
       transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out,  transform 0.2s linear;
-      width: 37.5px;
+      width: 100%;
     }
     &:before {
       top: 5px;
@@ -191,7 +192,7 @@ $hamburger-zindex: $menu-zindex + 10;
     display: none;
   }
   .small{
-    font-size:1.75vw;
+    font-size:1.5rem;
     letter-spacing: 0.15em;
   }
 }

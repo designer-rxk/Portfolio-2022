@@ -3,19 +3,19 @@ import React from "react";
 const AdminDashboard = () =>{
     return(
         <span className={"page-fade"}>
-            <h2 className={"work-title"}>Admin Dash <br/> website</h2>
-            <div className={"about-spans"}>
+            <h2 className={"work-title mobile-hide"}>Admin Dash <br/> website</h2>
+            <div className={"about-spans mobile-hide"}>
                 <span className={"divider-span"}/>
                 <span className={"divider-span child"}/>
             </div>
-            <p className={"title-description desc-small"}>
+            <p className={"title-description desc-small mobile-hide"}>
                 This is a full frontend website that is focused on logic and the visualisation of data.
                 It is a mock website, that allows users to view and edit data in various ways. <br/>
                 This website uses React, <a href={"https://www.syncfusion.com/"} target={"_blank"} rel="noreferrer"
                                             className={"work-links"}>Syncfusion</a> and <a href={"https://tailwindcss.com/"} target={"_blank"} rel="noreferrer"
                                                                                            className={"work-links"}>Tailwind.css</a>.
             </p>
-            <div className={"work-button-container"}>
+            <div className={"work-button-container mobile-hide"}>
                 <div className={"work-view-button"}>
                     <a className={"no-anchor"} href={"https://github.com/designer-rxk/react-admin-dashboard"} target={"_blank"} rel="noreferrer">
                         View on GitHub

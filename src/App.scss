@@ -16,6 +16,7 @@ body{
     right:0;
     left:0;
     background: linear-gradient(to top left,#0f0c29, #24243e);
+    max-width: 100%;
 
 }::-webkit-scrollbar {
      display: none;
@@ -26,6 +27,7 @@ body{
 .scroll-container {
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 .page{
@@ -56,12 +58,11 @@ body{
     width:50px;
     background:#ff4d5a;
 }
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 701px) and (max-width: 1024px) {
     .inner{
         margin:0.7rem;
     }
 }
-
 .intro {
     background: linear-gradient(to top left,#0f0c29, #24243e);
     position: fixed;
@@ -74,10 +75,36 @@ body{
     align-items: center;
     z-index: 2000;
 }
-
 .intro-text {
     color: #FFF;
     font-family: Poppins, sans-serif;
-    font-size: 3rem;
+    font-size: 3vw;
     z-index: 2000;
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    .bullet-points{
+        position: absolute;
+        width:100vw;
+        justify-content: center;
+        height:calc(25px + 3rem);
+        bottom:0;
+    }
+    .inner{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .bullets{
+        margin: 2rem 1rem 0.5rem;
+        width:5px;
+        height:25px;
+        background: aliceblue;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .active{
+        width:5px;
+        height:50px;
+        background: #ff4d5a;
+        margin-bottom:3rem;
+    }
 }

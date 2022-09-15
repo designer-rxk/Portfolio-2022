@@ -91,9 +91,16 @@
     height:100%;
     border-radius: 5px;
 }
+.fade{
+    opacity: 0.75;
+    transition: 0.4s ease-in-out;
+    &:hover{
+        opacity:1;
+    }
+}
 
 .carousel-image{
-    opacity: 0.9;
+    opacity: 0.75;
     transition: 0.4s ease-in-out;
     &:hover{
         opacity:1;
@@ -106,8 +113,8 @@
     color: #fff;
     font-family: Poppins, sans-serif;
     z-index: 300;
-    font-size: 5rem;
-    right:-3.4%;
+    font-size: 3rem;
+    right:-2%;
     text-shadow: 0 0 5px black;
 }
 .carousel-num{
@@ -183,6 +190,9 @@
 .desc-small{
     font-size:1vw;
 }
+.mobile{
+    display: none;
+}
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
     .desc-small{
         font-size: 1rem;
@@ -203,7 +213,7 @@
         flex-direction: column;
     }
 }
-@media screen and (min-width: 650px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
     .desc-small{
         font-size: 0.9rem;
     }
@@ -239,49 +249,14 @@
     .work-right{
         width: calc(92% - (50px));
     }
-}
-@media screen and (min-width: 0) and (max-width: 649px) {
-    .desc-small{
+    .mobile-num{
         display: none;
     }
-    .work-title{
-        font-size: 4rem;
-    }
-    .work-carousel-button{
-        font-size: 2.5rem;
-        top:50%;
-    }
-    .work-button-container{
-        display: flex;
-        position: absolute;
-        transform: translate3d(0, 350%, 0);
-        width:100%;
-        text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
-    }
-    .work-view-button{
-        padding: 1rem 1rem;
-        width:100%;
-        font-size: 1rem;
-    }
-    .carousel-right{
-        width:100%;
-        position: absolute;
-    }
-    .carousel-left{
-        width:100%;
-        position: absolute;
-    }
-    .work-page-num{
-        display: none;
-    }
-    .work-left{
-        width:calc(50px + 1.4rem);
-    }
-    .work-right{
-        width: calc(92% - (50px));
-    }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 550px) and (max-width: 699px) {
+    .mobile{
+        display: unset;
+    }
     .work-title{
         font-size: 2.5rem;
     }
@@ -302,5 +277,152 @@
     .carousel-left{
         width:100%;
         position: absolute;
+    }
+    .mobile-wrapper{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .work-page{
+        display: none;
+    }
+    .mobile-top{
+        height:40vh;
+    }
+    .mobile-bottom{
+        height:40vh;
+    }
+    .mobile-num{
+        font-size: 3rem;
+        z-index: 1;
+        height:6rem;
+        bottom:10%;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .workButtons{
+        transform: translateY(100%);
+        font-size: 3rem;
+        z-index: 1000;
+    }
+    .work-carousel-button.next{
+        padding:0.1rem;
+        font-size: 10vw;
+        z-index: 1000;
+    }
+    .work-carousel-button.prev{
+        padding:0.1rem;
+        font-size: 10vw;
+        z-index: 1000;
+    }
+    .mobile-text{
+        height:80%;
+    }
+    .mobile-title{
+        width:100%;
+        text-align: center;
+        font-size: 2rem;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    .mobile-desc{
+        height:70%;
+        font-weight: 200;
+        font-size: 3.25vw;
+        letter-spacing: 0.1em;
+        line-height: 1.3;
+        text-align: center;
+        align-items: center;
+    }
+    .carousel-image{
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 549px) {
+    .mobile{
+        display: unset;
+    }
+    .work-title{
+        font-size: 2.5rem;
+    }
+    .work-button-container{
+        display: flex;
+        width:100%;
+    }
+    .work-view-button{
+        padding: 1rem 1rem;
+        width:100%;
+        font-size: 1rem;
+        text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+    }
+    .carousel-right{
+        width:100%;
+        position: absolute;
+    }
+    .carousel-left{
+        width:100%;
+        position: absolute;
+    }
+    .mobile-wrapper{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .work-page{
+        display: none;
+    }
+    .mobile-top{
+        height:40vh;
+    }
+    .mobile-bottom{
+        height:40vh;
+    }
+    .mobile-num{
+        font-size: 3rem;
+        z-index: 1;
+        height:6rem;
+        bottom:10%;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .workButtons{
+        transform: translateY(100%);
+        font-size: 3rem;
+        z-index: 1000;
+    }
+    .work-carousel-button.next{
+        padding:0.1rem;
+        font-size: 10vw;
+        z-index: 1000;
+    }
+    .work-carousel-button.prev{
+        padding:0.1rem;
+        font-size: 10vw;
+        z-index: 1000;
+    }
+    .mobile-text{
+        height:80%;
+    }
+    .mobile-title{
+        width:100%;
+        text-align: center;
+        font-size: 2rem;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    .mobile-desc{
+        height:70%;
+        font-weight: 200;
+        font-size: 3.75vw;
+        letter-spacing: 0.1em;
+        line-height: 1.3;
+        text-align: center;
+        align-items: center;
+    }
+    .carousel-image{
+        opacity: 1;
+    }
+    .work-view-button{
+        font-size: 3vw;
     }
 }

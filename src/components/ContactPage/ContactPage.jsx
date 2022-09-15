@@ -212,7 +212,7 @@ const ContactPage = (active) =>{
                         </div>
                     </div>
                 </div>
-                <div className={"work-page-num"}>
+                <div className={"work-page-num mobile-num"}>
                     <p>03</p>
                 </div>
             </div>

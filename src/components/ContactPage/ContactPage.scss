@@ -9,6 +9,11 @@
     align-items: center;
     position: relative;
 }
+.contact-links{
+    position: absolute;
+    bottom: 2%;
+    transform: translateX(calc(50% + 2rem));
+}
 .toast-container{
     position: sticky;
     width:100vw;
@@ -101,16 +106,16 @@ textarea{
     border-radius: 25px;
     padding: 0 5%;
     font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
     transition-duration: 0.3s;
 }
 .contact-input-message{
-    font-size: 1rem;
-    min-height: auto;
-    max-height: 200px;
-    max-width: 100%;
-    min-width: 75%;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    width:27.5vw;
+    max-width: 75%;
     border:none;
     border-radius: 25px;
     padding: 1rem 5%;
@@ -119,7 +124,7 @@ textarea{
     transition-duration: 0.3s;
 }
 .contact-button{
-    font-size: 1rem;
+    font-size: 0.85rem;
     height: 50px;
     width:50%;
     margin: 1rem 0 1rem 0;
@@ -139,7 +144,8 @@ textarea{
     cursor: pointer;
     height: 1.5vw;
     width: 1.5vw;
-    margin: 1rem;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
     transition-duration: 0.3s;
 }
 .contact-icons:hover{
@@ -175,9 +181,30 @@ textarea{
     .contact-error{
         margin-left:12.5%;
     }
-    .contact-inputs{
-        margin-left:10%;
-        width:80%;
+    .contact-input{
+        font-size: 0.85rem;
+        height:2.75rem;
+        width:30vw;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+    }
+    .contact-input-message{
+        padding: 1vw 5%;
+        font-size: 0.85rem;
+        font-weight: 300;
+        height:4rem;
+        width:30vw;
+        letter-spacing: 0.1em;
+    }
+    .contact-button{
+        font-size: 0.85rem;
+        margin:0.8rem 0 0.8rem 0;
+        height:2.75rem;
+        width:15vw;
+        letter-spacing: 0.1em;
+        padding-right:0.8rem;
+        padding-left:0.8rem;
+        font-weight: 300;
     }
     .contact-title{
         font-size: 3.5vw;
@@ -187,7 +214,7 @@ textarea{
         width: 2rem;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
     .contact-left{
         width:0;
     }
@@ -198,16 +225,36 @@ textarea{
     .contact-error{
         margin-left:12.5%;
     }
-    .contact-inputs{
-        margin-left:10%;
-        width:80%;
+    .contact-input{
+        font-size: 0.85rem;
+        height:2.75rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        width:27.5vw;
+    }
+    .contact-input-message{
+        padding: 1vw 5%;
+        font-size: 0.85rem;
+        font-weight: 300;
+        height:4rem;
+        letter-spacing: 0.1em;
+    }
+    .contact-button{
+        font-size: 0.85rem;
+        margin:0.8rem 0 0.8rem 0;
+        height:2.75rem;
+        width:20vw;
+        letter-spacing: 0.1em;
+        padding-right:0.8rem;
+        padding-left:0.8rem;
+        font-weight: 300;
     }
     .contact-title{
         font-size: 3.5vw;
     }
     .title-text{
-        font-size: 3rem;
-        margin-left:7.5%;
+        font-size: 2.75rem;
+        padding-left:7.5%;
     }
     .contact-icons{
         height: 2rem;
@@ -224,19 +271,19 @@ textarea{
     z-index: 200;
     margin-left: 11%;
 }
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 474px) {
     .contact-left{
         width:0;
     }
     .contact-icons{
-        height: 2rem;
-        width: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0 1rem;
     }
     .contact-right{
-        width:90%;
-        height:110%;
+        width:100%;
+        height:100%;
         border-radius:5px;
-        transform: translateY(22.5%);
     }
     .contact-text{
         font-size: 3rem;
@@ -261,16 +308,87 @@ textarea{
         padding: 0 4vw;
     }
     .contact-input{
-        font-size: 0.9rem;
+        font-size: 0.80rem;
+        height:7.5vw;
+        font-weight: 300;
+        letter-spacing: 0;
     }
     .contact-input-message{
-        padding: 1rem 5%;
-        font-size: 0.9rem;
+        padding: 1vw 5%;
+        font-size: 0.80rem;
+        font-weight: 300;
+        height:10vh;
+        width:75%;
+        letter-spacing: 0;
     }
     .contact-button{
-        font-size: 0.9rem;
+        font-size: 0.80rem;
         margin:0.8rem 0 0.8rem 0;
+        height:7.5vw;
+        letter-spacing: 0;
         padding-right:0.8rem;
         padding-left:0.8rem;
+        font-weight: 300;
+    }
+}
+@media screen and (min-width: 475px) and (max-width: 699px) {
+    .contact-left{
+        width:0;
+    }
+    .contact-icons{
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 0 1rem;
+    }
+    .contact-right{
+        width:100%;
+        height:100%;
+        border-radius:5px;
+    }
+    .contact-text{
+        font-size: 3rem;
+    }
+    .contact-title-main{
+        display: none;
+    }
+    .contact-wrapper{
+        height:65%;
+        width:75%;
+        box-shadow: none;
+        transform: translateY(-25%);
+    }
+    .break{
+        display: none;
+    }
+    .contact-title{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .contact-error{
+        padding: 0 4vw;
+    }
+    .contact-input{
+        font-size: 0.85rem;
+        height:2.25rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+    }
+    .contact-input-message{
+        padding: 1vw 5%;
+        font-size: 0.85rem;
+        font-weight: 300;
+        height:3rem;
+        width:75%;
+        letter-spacing: 0.1em;
+    }
+    .contact-button{
+        font-size: 0.85rem;
+        margin:0.8rem 0 0.8rem 0;
+        height:2.25rem;
+        width:50%;
+        letter-spacing: 0.1em;
+        padding-right:0.8rem;
+        padding-left:0.8rem;
+        font-weight: 300;
     }
 }
