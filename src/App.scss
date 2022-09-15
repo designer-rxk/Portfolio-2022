@@ -107,4 +107,7 @@ body{
         background: #ff4d5a;
         margin-bottom:3rem;
     }
+    .scroll-container{
+        scroll-snap-type: y;
+    }
 }

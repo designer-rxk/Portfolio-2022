@@ -11,8 +11,8 @@
 }
 .contact-links{
     position: absolute;
-    bottom: 2%;
-    transform: translateX(calc(50% + 2rem));
+    bottom: 0.5%;
+    width:50%;
 }
 .toast-container{
     position: sticky;
@@ -174,6 +174,9 @@ textarea{
     .contact-left{
         width:0;
     }
+    .contact-links{
+        width:100%;
+    }
     .contact-right{
         width:100%;
         border-radius:5px;
@@ -217,6 +220,9 @@ textarea{
 @media screen and (min-width: 700px) and (max-width: 1024px) {
     .contact-left{
         width:0;
+    }
+    .contact-links{
+        width:100%;
     }
     .contact-right{
         width:100%;
@@ -275,12 +281,17 @@ textarea{
     .contact-left{
         width:0;
     }
+    .contact-links{
+        width:100%;
+    }
     .contact-icons{
         height: 1.5rem;
         width: 1.5rem;
         margin: 0 1rem;
     }
     .contact-right{
+        position: absolute;
+        bottom:7.5%;
         width:100%;
         height:100%;
         border-radius:5px;
@@ -300,6 +311,9 @@ textarea{
     .break{
         display: none;
     }
+    .contact-num{
+        bottom:-10%;
+    }
     .contact-title{
         text-align: center;
         font-size: 1.2em;
@@ -308,7 +322,7 @@ textarea{
         padding: 0 4vw;
     }
     .contact-input{
-        font-size: 0.80rem;
+        font-size: 0.8rem;
         height:7.5vw;
         font-weight: 300;
         letter-spacing: 0;
@@ -334,6 +348,9 @@ textarea{
 @media screen and (min-width: 475px) and (max-width: 699px) {
     .contact-left{
         width:0;
+    }
+    .contact-links{
+        width:100%;
     }
     .contact-icons{
         height: 1.5rem;

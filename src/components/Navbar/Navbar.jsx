@@ -17,7 +17,7 @@ const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4}) =>{
 
     return(<>
             <div className={`Modal ${modalStatus === true ? "fat" : "none" }`}>
-                <Modal ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} setModalStatus={setModalStatus} setOpenModal={setOpenModal} openModal={openModal} />
+                <Modal ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} modalStatus={modalStatus} setModalStatus={setModalStatus} setOpenModal={setOpenModal} openModal={openModal} />
             </div>
 
         <div className={"header"}>
@@ -27,13 +27,13 @@ const Navbar = ({openModal, setOpenModal, ref1, ref2, ref3, ref4}) =>{
                     <div className={"small"}>Kārkliņš</div>
                 </div>
             </div>
-            <div className={"links"}>
-                <div className={"icon-wrapper"}>
-                    <a href={"https://www.linkedin.com/in/raivis-karklins/"} target={"_blank"} rel="noreferrer">
-                        <FaLinkedin className={"icon"}/>
+            <div className={"links mobile-hide"}>
+                <div className={"icon-wrapper mobile-hide"}>
+                    <a href={"https://www.linkedin.com/in/raivis-karklins/"} target={"_blank"} rel="noreferrer" className={"mobile-hide"}>
+                        <FaLinkedin className={"icon mobile-hide"}/>
                     </a>
-                    <a href={"https://github.com/designer-rxk"} target={"_blank"} rel="noreferrer">
-                        <FaGithub className={"icon"}/>
+                    <a href={"https://github.com/designer-rxk"} target={"_blank"} rel="noreferrer" className={"mobile-hide"}>
+                        <FaGithub className={"icon mobile-hide"}/>
                     </a>
                 </div>
             </div>

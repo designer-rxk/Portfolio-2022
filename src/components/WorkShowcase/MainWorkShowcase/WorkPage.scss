@@ -249,9 +249,6 @@
     .work-right{
         width: calc(92% - (50px));
     }
-    .mobile-num{
-        display: none;
-    }
 }
 @media screen and (min-width: 550px) and (max-width: 699px) {
     .mobile{
@@ -371,16 +368,17 @@
         display: none;
     }
     .mobile-top{
-        height:40vh;
+        height:30vh;
     }
     .mobile-bottom{
         height:40vh;
     }
     .mobile-num{
-        font-size: 3rem;
+        font-size: 2rem;
         z-index: 1;
         height:6rem;
-        bottom:10%;
+        bottom:5%;
+        right:-5%;
     }
     .mobile-hide{
         display: none;
