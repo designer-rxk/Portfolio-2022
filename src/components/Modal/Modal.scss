@@ -137,6 +137,10 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
     margin-bottom: 2rem;
     font-size: 3.5rem;
   }
+  .modal-icon{
+    width:2.5rem;
+    height:2.5rem;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .modal-container{
@@ -144,6 +148,10 @@ $modal-background: linear-gradient(to left bottom, rgb(111, 14, 113), rgb(118, 2
   }
   .modal-links{
     display: flex;
+  }
+  .modal-icon{
+    width:2.5rem;
+    height:2.5rem;
   }
   .modal-text{
     margin-bottom: 2rem;
