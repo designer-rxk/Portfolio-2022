@@ -1,10 +1,10 @@
 # React portfolio 2022
-Technology used:
+## Technology used:
 * React.js
 * Gsap
 * E-mail.js
 * React Toastify
-To run:
+## To run:
 * Install dependencies
 * Npm start
 * Check localhost:3000
