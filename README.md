@@ -7,4 +7,4 @@
 ## To run:
 * Install dependencies
 * Npm start
-* Check localhost:3000
+* Check http://localhost:3000/
